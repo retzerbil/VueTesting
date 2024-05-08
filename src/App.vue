@@ -24,9 +24,9 @@ function yeah() {
     <button :disabled="!clickable" :class="myClass" @click="yeah">{{ buttonText }}</button>
 
     <!-- v-if -->
-    <p v-if="showP">This is a paragraph</p>
+    <p v-if="showP">This is a paragraph {{ showP }}</p>
 
-    <span v-else>hello</span>
+    <span v-else>hello {{ showP }}</span>
 
     <ul>
       <!-- v-for -->
